@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ChatService</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.kt</span></div><h1>Main.kt</h1><pre class="source lang-java linenums">fun main() {
+
+<span class="nc" id="L3">    val user1 = User(</span>
+<span class="nc" id="L4">        id = 1 ,</span>
+<span class="nc" id="L5">        firstName = &quot;Alex&quot; ,</span>
+<span class="nc" id="L6">        lastName = &quot;Volkov&quot; ,</span>
+<span class="nc" id="L7">        incomingMessages = emptyList() ,</span>
+<span class="nc" id="L8">        outgoingMessages = emptyList()</span>
+    )
+
+<span class="nc" id="L11">    val user2 = User(</span>
+<span class="nc" id="L12">        id = 2 ,</span>
+<span class="nc" id="L13">        firstName = &quot;Alexandr&quot; ,</span>
+<span class="nc" id="L14">        lastName = &quot;Petrov&quot; ,</span>
+<span class="nc" id="L15">        incomingMessages = emptyList() ,</span>
+<span class="nc" id="L16">        outgoingMessages = emptyList()</span>
+    )
+
+<span class="nc" id="L19">    val user3 = User(</span>
+<span class="nc" id="L20">        id = 2 ,</span>
+<span class="nc" id="L21">        firstName = &quot;Aleksey&quot; ,</span>
+<span class="nc" id="L22">        lastName = &quot;Ivanov&quot; ,</span>
+<span class="nc" id="L23">        incomingMessages = emptyList() ,</span>
+<span class="nc" id="L24">        outgoingMessages = emptyList()</span>
+    )
+
+<span class="nc" id="L27">    val user4 = User(</span>
+<span class="nc" id="L28">        id = 2 ,</span>
+<span class="nc" id="L29">        firstName = &quot;Alic&quot; ,</span>
+<span class="nc" id="L30">        lastName = &quot;Salovat&quot; ,</span>
+<span class="nc" id="L31">        incomingMessages = emptyList() ,</span>
+<span class="nc" id="L32">        outgoingMessages = emptyList()</span>
+    )
+
+<span class="nc" id="L35">    ChatService.addUser(user1)</span>
+<span class="nc" id="L36">    ChatService.addUser(user2)</span>
+<span class="nc" id="L37">    ChatService.addUser(user3)</span>
+<span class="nc" id="L38">    ChatService.addUser(user4)</span>
+
+<span class="nc" id="L40">    val message1 = Message(</span>
+<span class="nc" id="L41">        text = &quot;first&quot; ,</span>
+<span class="nc" id="L42">        senderId = 1 ,</span>
+<span class="nc" id="L43">        recipientId = 2</span>
+    )
+
+<span class="nc" id="L46">    val message2 = Message(</span>
+<span class="nc" id="L47">        text = &quot;second&quot; ,</span>
+<span class="nc" id="L48">        senderId = 1 ,</span>
+<span class="nc" id="L49">        recipientId = 4</span>
+    )
+
+<span class="nc" id="L52">    val message3 = Message(</span>
+<span class="nc" id="L53">        text = &quot;third&quot; ,</span>
+<span class="nc" id="L54">        senderId = 1 ,</span>
+<span class="nc" id="L55">        recipientId = 3</span>
+    )
+
+<span class="nc" id="L58">    val message4 = Message(</span>
+<span class="nc" id="L59">        text = &quot;fourth&quot; ,</span>
+<span class="nc" id="L60">        senderId = 3 ,</span>
+<span class="nc" id="L61">        recipientId = 1</span>
+    )
+
+<span class="nc" id="L64">    val message5 = Message(</span>
+<span class="nc" id="L65">        text = &quot;fifth&quot; ,</span>
+<span class="nc" id="L66">        senderId = 2 ,</span>
+<span class="nc" id="L67">        recipientId = 1</span>
+    )
+
+<span class="nc" id="L70">    val message6 = Message(</span>
+<span class="nc" id="L71">        text = &quot;sixth&quot; ,</span>
+<span class="nc" id="L72">        senderId = 2 ,</span>
+<span class="nc" id="L73">        recipientId = 1</span>
+    )
+
+<span class="nc" id="L76">    val message7 = Message(</span>
+<span class="nc" id="L77">        text = &quot;seventh&quot; ,</span>
+<span class="nc" id="L78">        senderId = 2 ,</span>
+<span class="nc" id="L79">        recipientId = 1</span>
+    )
+
+<span class="nc" id="L82">    val message8 = Message(</span>
+<span class="nc" id="L83">        text = &quot;eighth&quot; ,</span>
+<span class="nc" id="L84">        senderId = 2 ,</span>
+<span class="nc" id="L85">        recipientId = 3</span>
+    )
+
+<span class="nc" id="L88">    val message9 = Message(</span>
+<span class="nc" id="L89">        text = &quot;ninth&quot; ,</span>
+<span class="nc" id="L90">        senderId = 2 ,</span>
+<span class="nc" id="L91">        recipientId = 1</span>
+    )
+
+<span class="nc" id="L94">    val message10 = Message(</span>
+<span class="nc" id="L95">        text = &quot;tenth&quot; ,</span>
+<span class="nc" id="L96">        senderId = 4 ,</span>
+<span class="nc" id="L97">        recipientId = 2</span>
+    )
+
+<span class="nc" id="L100">    val message11 = Message(</span>
+<span class="nc" id="L101">        text = &quot;eleventh&quot; ,</span>
+<span class="nc" id="L102">        senderId = 1 ,</span>
+<span class="nc" id="L103">        recipientId = 2</span>
+    )
+
+<span class="nc" id="L106">    val updatedMessage = Message(</span>
+<span class="nc" id="L107">        id = 1 ,</span>
+<span class="nc" id="L108">        text = &quot;UPDATED!!!&quot; ,</span>
+<span class="nc" id="L109">        senderId = 1 ,</span>
+<span class="nc" id="L110">        recipientId = 2</span>
+    )
+
+<span class="nc" id="L113">    ChatService.addMessage(message1)</span>
+<span class="nc" id="L114">    ChatService.addMessage(message2)</span>
+<span class="nc" id="L115">    ChatService.addMessage(message3)</span>
+<span class="nc" id="L116">    ChatService.addMessage(message4)</span>
+<span class="nc" id="L117">    ChatService.addMessage(message5)</span>
+<span class="nc" id="L118">    ChatService.addMessage(message6)</span>
+<span class="nc" id="L119">    ChatService.addMessage(message7)</span>
+<span class="nc" id="L120">    ChatService.addMessage(message8)</span>
+<span class="nc" id="L121">    ChatService.addMessage(message9)</span>
+<span class="nc" id="L122">    ChatService.addMessage(message10)</span>
+<span class="nc" id="L123">    ChatService.addMessage(message11)</span>
+
+<span class="nc" id="L125">    ChatService.editingMessage(updatedMessage)</span>
+<span class="nc" id="L126">    ChatService.getUnreadChats(1)</span>
+<span class="nc" id="L127">    ChatService.deleteMessage(8)</span>
+<span class="nc" id="L128">    ChatService.deleteChatId(listOf(3 , 1))</span>
+<span class="nc" id="L129">    ChatService.getMessagesFromChat(chatId = listOf(1 , 2) , 5 , 2)</span>
+
+<span class="nc" id="L131">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
